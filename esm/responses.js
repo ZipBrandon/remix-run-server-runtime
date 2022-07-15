@@ -1,5 +1,5 @@
 /**
- * @remix-run/server-runtime v1.6.4
+ * @remix-run/server-runtime v1.6.5
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -8,6 +8,9 @@
  *
  * @license MIT
  */
+// must be a type since this is a subtype of response
+// interfaces must conform to the types they extend
+
 /**
  * This is a shortcut for creating `application/json` responses. Converts `data`
  * to JSON and sets the `Content-Type` header.

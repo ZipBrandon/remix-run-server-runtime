@@ -1,5 +1,5 @@
 /**
- * @remix-run/server-runtime v1.6.4
+ * @remix-run/server-runtime v1.6.5
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -53,6 +53,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
  * because it came first, and that just wouldn't be fair to let errors cut in
  * line.
  */
+// must be type alias due to inference issues on interfaces
+// https://github.com/microsoft/TypeScript/issues/15300
 async function serializeError(error) {
   return {
     message: error.message,

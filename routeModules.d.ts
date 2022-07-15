@@ -15,6 +15,8 @@ export interface DataFunctionArgs {
     context: AppLoadContext;
     params: Params;
 }
+export declare type LoaderArgs = DataFunctionArgs;
+export declare type ActionArgs = DataFunctionArgs;
 /**
  * A function that handles data mutations for a route.
  */

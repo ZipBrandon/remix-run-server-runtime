@@ -1,7 +1,7 @@
 import type { DataFunctionArgs } from "./routeModules";
 import type { EntryContext, AssetsManifest } from "./entry";
 import type { ServerRouteManifest } from "./routes";
-import type { AppLoadContext } from "./data";
+import type { AppLoadContext } from './data';
 /**
  * The output of the compiler for the server build.
  */
@@ -11,6 +11,8 @@ export interface ServerBuild {
     };
     routes: ServerRouteManifest;
     assets: AssetsManifest;
+    publicPath: string;
+    assetsBuildDirectory: string;
 }
 export interface HandleDocumentRequestFunction {
     (request: Request, responseStatusCode: number, responseHeaders: Headers, context: EntryContext, loadContext: AppLoadContext): Promise<Response> | Response;

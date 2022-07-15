@@ -53,8 +53,8 @@ export interface ThrownResponse<T = any> {
     statusText: string;
     data: T;
 }
-export interface SerializedError {
+export declare type SerializedError = {
     message: string;
     stack?: string;
-}
+};
 export declare function serializeError(error: Error): Promise<SerializedError>;
