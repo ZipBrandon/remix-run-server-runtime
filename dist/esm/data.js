@@ -1,5 +1,5 @@
 /**
- * @remix-run/server-runtime v1.6.7
+ * @remix-run/server-runtime v1.6.8
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -11,7 +11,7 @@
 import { isResponse, isRedirectResponse, json } from './responses.js';
 
 /**
- * An object of arbitrary for route loaders and actions provided by the
+ * An object of unknown type for route loaders and actions provided by the
  * server's `getLoadContext()` function.
  */
 
